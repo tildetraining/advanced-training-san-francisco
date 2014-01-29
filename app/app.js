@@ -1,4 +1,5 @@
 import Resolver from 'resolver';
+import Store from 'appkit/microdata/store';
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
@@ -8,6 +9,15 @@ var App = Ember.Application.extend({
   LOG_VIEW_LOOKUPS: true,
   modulePrefix: 'appkit', // TODO: loaded via config
   Resolver: Resolver
+});
+
+App.initializer({
+  name: 'microdata',
+
+  initialize: function(container, app) {
+    app.register('store:main', Store);
+    app.inject('controller', 'store', 'store:main');
+  }
 });
 
 export default App;
