@@ -11,7 +11,7 @@
 
 
 ### Run the server
-grunt server
+`grunt server`
 
 ### Check out the test suite
-[http://localhost:8000/tests?step=<1-9>](http://localhost:8000/tests?step=1)
+[http://localhost:8000/tests?step=1-9](http://localhost:8000/tests?step=1)
