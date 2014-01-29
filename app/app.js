@@ -1,5 +1,4 @@
 import Resolver from 'resolver';
-import Store from 'appkit/microdata/store';
 
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
