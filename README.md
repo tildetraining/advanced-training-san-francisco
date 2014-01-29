@@ -3,6 +3,13 @@
 ### Please see the Ember App Kit getting started guide  
 [http://iamstef.net/ember-app-kit/guides/getting-started.html](http://iamstef.net/ember-app-kit/guides/getting-started.html)
 
+#### TL;DR
+`npm install -g grunt-cli`  
+`npm install`  
+`npm install -g bower`  
+`bower install`
+
+
 ### Run the server
 grunt server
 
