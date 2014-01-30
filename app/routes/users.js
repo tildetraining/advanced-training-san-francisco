@@ -1,5 +1,13 @@
 export default Ember.Route.extend({
 
+  // Check to make sure we're authenticated. If not,
+  // redirect to the authorization route.
+  beforeModel: function() {
+    if(!this.controllerFor('authorization').get('token')) {
+      this.transitionTo('authorization');
+    }
+  },
+
   model: function() {
     // Check to see what we have in localstorage. If we already
     // have some stuff, just send that as the model. Otherwise,

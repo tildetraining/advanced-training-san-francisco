@@ -18,7 +18,7 @@ export default Em.View.extend({
   didScroll: function(ev) {
     if(!this.isNearBottom()) return;
     this.get('controller').send('fetchMore');
-  },
+  }
 
   // UserListView:
   // Here you will need to implement a CollectionView. The view's element

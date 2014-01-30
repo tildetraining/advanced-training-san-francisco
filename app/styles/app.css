@@ -46,7 +46,7 @@ form {
   width: 150px;
   padding: 0;
   margin: 0;
-  display: none;
+  /* display: none; */
 }
 
 .user:hover {
