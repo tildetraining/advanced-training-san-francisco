@@ -40,7 +40,7 @@ export default Ember.ArrayController.extend({
       headers: { 'Authorization': 'Basic ' + this.get('token') },
       error: function(resp) {
         if(resp.status === 401) {
-          controller.transitionToRoute('authorization');
+          // controller.transitionToRoute('authorization');
         }
       },
       success: function(data, textStatus, jqHhr) {
