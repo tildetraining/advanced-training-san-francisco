@@ -1,11 +1,14 @@
-var Router = Ember.Router.extend(); // ensure we don't share routes between all Router instances
+var Router = Ember.Router.extend();
+
+Router.reopen({
+  location: 'history'
+});
 
 Router.map(function() {
-  this.route('component-test');
-  this.route('helper-test');
-  // this.resource('posts', function() {
-  //   this.route('new');
-  // });
+  this.route('authorization');
+  this.resource('users', { path: '/' }, function() {
+    this.route('show', { path: '/:login' });
+  });
 });
 
 export default Router;

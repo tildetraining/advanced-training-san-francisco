@@ -1,7 +1,5 @@
 /*
-  In Step 2, you'll use what you've learned about initializers and injections
-  to ensure that all of the controllers in the application have access to the
-  store object.
+  In Step 2 ...
 */
 
 import Store from 'appkit/microdata/store';

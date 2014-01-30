@@ -1,0 +1,12 @@
+<h3>Login to Github</h3>
+
+<form>
+  <ul>
+    {{#if errorMsg}}
+      <li class="error">{{errorMsg}}</li>
+    {{/if}}
+    <li>{{input type="text" placeholder="Username" value=username}}</li>
+    <li>{{input type="text" placeholder="Password" value=password type="password"}}</li>
+    <li><input {{action didSetCredentials}} type="submit"></input></li>
+  </ul>
+</form>

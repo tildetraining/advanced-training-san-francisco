@@ -1,15 +1,5 @@
 /*
-  In Step 5, you'll start to lay the groundwork for being able to make changes
-  to records after you've retrieved them from the store.
-
-  The first step is to make sure that the computed properties your `attr`
-  factory support being `set` as well as `get`.
-
-  After that, you'll need to implement a "protected" method on the model called
-  `$mergeChanges`. This method should collapse any pending changes in the
-  `$changes` hash into `$data`. While it will only be exercised in these tests
-  for now, in a future step the store will use this method when interacting
-  with the adapter.
+  In Step 5 ...
 */
 
 import Store from 'appkit/microdata/store';

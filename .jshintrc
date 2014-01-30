@@ -7,7 +7,11 @@
     "Ember",
     "Em",
     "DS",
-    "$"
+    "$",
+    "console",
+    "btoa",
+    "localStorage",
+    "atob"
   ],
   "node" : false,
   "browser" : false,

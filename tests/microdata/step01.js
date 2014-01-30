@@ -1,16 +1,5 @@
 /*
-  In Step 1, you'll define the classes that make up the core store, adapter and
-  model architecture.
-
-  This is a good opportunity for you to familiarize yourself with the new ES6
-  module syntax if you haven't used it before.
-
-  To get the tests passing, all you need to do is create new files in the
-  appropriate locations and ensure they're exporting classes (or, in the
-  case of the `attr` module, a function).
-
-  Once you've got the modules created, we'll be filling them in the later
-  steps.
+  In Step 1 ...
 */
 
 import Adapter from 'appkit/microdata/adapter';

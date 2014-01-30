@@ -1,10 +1,5 @@
 /*
-  Here you will make your getById method able to coerce the record ID into
-  a consistent format (ie. make it able to take in either a string or integer
-  version of the ID.
-
-  Next, you will implement your store's find method which takes in the id of
-  the record and returns a promise object that gets later resolved.
+  In Step 6 ...
 */
 
 import Store from 'appkit/microdata/store';

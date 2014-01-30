@@ -1,8 +1,162 @@
-/* Put your CSS here */
 html, body {
-    margin: 20px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  /* font-weight: lighter !important; */
+  /* margin: 20px; */
+  padding: 0px;
+  background-color: #090909;
+  color: white;
+  position: relative;
+  font-weight: 300;
+  margin: 0;
 }
 
-@keyframes domChanged { from { background: yellow; } }
-@-webkit-keyframes domChanged { from { background: yellow; } }
-.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+.error {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  padding: 10px;
+}
+
+.users ul li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.loading {
+  font-size: 1.5em;
+  clear: both;
+  padding-top: 30px;
+}
+
+.user {
+  color: lightgrey;
+  position: relative;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.user:hover {
+  color: white;
+}
+
+.user img {
+  width: 149px;
+  border: 1px solid #0f0f0f;
+  position: relative;
+}
+
+.login {
+  text-shadow: 1px 1px 1px #0e0e0e;
+  letter-spacing: 2px;
+  font-size: 0.75em;
+  position: absolute;
+  top: 125px;
+  left: 0px;
+  width: 150px;
+  z-index: 50;
+  background-color: black;
+  padding: 3px;
+  opacity: 0.7;
+}
+
+.user-list {
+  /* margin-top: 20px; */
+}
+
+.users {
+  width: 80%;
+  /* height: 600px; */
+  min-height: 150px;
+  min-width: 150px;
+  overflow: scroll;
+  margin: 40px auto;
+}
+
+.reset-users {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  /* opacity: 0.5; */
+}
+
+.user-show {
+  color: #eaeaea;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100px;
+  min-height: 300px;
+  max-height: 600px;
+  /* height: 60%; */
+  overflow: scroll;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 10em;
+  background-color: #181818;
+  /* opacity: 0.95; */
+  z-index: 100;
+  padding: 10px;
+  text-align:justify;
+  /* width: 50%; */
+  /* max-width: 500px; */
+  /* min-width: 200px; */
+  width: 500px;
+}
+
+.rate-limit {
+  color: #eaeaea;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: gray;
+  z-index: 100;
+  padding: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+.user-show h4 {
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.user-show img {
+  float: left;
+  height: 250px;
+  margin-right: 10px;
+}
+
+.user-show a {
+  position: absolute;
+  bottom: 8px;
+  left: 270px;
+  color: #eaeaea;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.user-show a:hover {
+  color: white;
+}
+
+/* @keyframes domChanged { from { background: yellow; } } */
+/* @-webkit-keyframes domChanged { from { background: yellow; } } */
+/* .ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; } */
+
+

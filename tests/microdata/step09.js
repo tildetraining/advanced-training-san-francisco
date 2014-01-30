@@ -1,8 +1,5 @@
 /*
-  Here you will implement two versions of save. The first being when the
-  record already exists in the store; a PUT in HTTP parlance.
-
-  Next you'll implement save when the record does not yet exist in the store.
+  In Step 9 ...
 */
 
 import Store from 'appkit/microdata/store';

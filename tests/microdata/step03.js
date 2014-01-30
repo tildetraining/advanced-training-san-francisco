@@ -1,10 +1,5 @@
 /*
-  In Step 3, we'll test the "protected" interface between the store and the
-  model class.
-
-  To do that, the tests set a newly-instantiated model's `$data` property and
-  ensure that those properties can be retrieved as normal properties from the
-  model instance.
+  In Step 3 ...
 */
 
 import Person from 'appkit/tests/helpers/person';
