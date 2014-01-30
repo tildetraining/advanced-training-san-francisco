@@ -1,19 +1,5 @@
 export default Ember.Route.extend({
 
-  beforeModel: function() {
-    if(!this.controllerFor('authorization').get('token')) {
-      this.transitionTo('authorization');
-    }
-  },
-
-  renderTemplate: function() {
-    this.render('rate_limit', {
-      outlet: 'rate_limit',
-      controller: 'rate_limit'
-    });
-    this._super();
-  },
-
   model: function() {
     // Check to see what we have in localstorage. If we already
     // have some stuff, just send that as the model. Otherwise,
